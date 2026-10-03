@@ -483,7 +483,7 @@ namespace ShipRemoteAutopilot
                 return;
             }
 
-            if (Gamepad.current != null && !Gamepad.current.leftShoulder.wasPressedThisFrame)
+            if (Gamepad.current != null && Gamepad.current.leftShoulder.wasPressedThisFrame)
             {
                 NotifyHUD("REMOTE AUTOPILOT IS ACTIVE.");
             }
